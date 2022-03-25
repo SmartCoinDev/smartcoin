@@ -6,7 +6,9 @@
   "homepage": "https://advtechnoking.github.io/",
   "scripts": {
     "start": "cross-env PORT=10888 HTTPS=true react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "num run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
